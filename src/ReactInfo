@@ -1,3 +1,34 @@
+*********************************************************************************************************************
+
 Functional Components -> Stateless Components -> App Component by default.
 
+*********************************************************************************************************************
+
 Class Based Components -> Statefull Components
+call Constructor(){
+    super();
+    this.state = {}
+}
+
+return is always inside the render function in class based Components.
+
+*********************************************************************************************************************
+
+super() -> in order to use "this" pointer you need to call super. So we should always call super() inside the Constructor in class components.
+
+*********************************************************************************************************************
+
+props are always transfered from parent to child.
+
+In Functional Based Components you pass props in the argument.
+In Class Based Components you pass props in Constructor() and super(). 
+
+*********************************************************************************************************************
+You should not change state directly instead use a function
+changeState = () => {
+    this.setState({
+        value: newValue
+    })
+    <button onClick = {() => this.changeState()} ></button>
+}
+When the state of a Component changes, the Component re-render.
