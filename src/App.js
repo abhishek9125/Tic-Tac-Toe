@@ -1,6 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 
+// Class Based Component Method -> Statefull
+// class App extends React.Component{
+//   render(){
+//     return(
+//       <div>Class Based Component</div>
+//     )
+//   }
+// }
+
+// Functional Based Component Method -> Stateless
 function App() {
   return (
     <div className="App">
